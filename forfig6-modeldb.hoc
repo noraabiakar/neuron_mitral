@@ -164,5 +164,5 @@ proc rungb() {
 	ggap=0.37
 	gap[0].g(ggap)
 	mt[1].tuftden { gbar_nax =0 }
-	run()
+	run() //works
 }
