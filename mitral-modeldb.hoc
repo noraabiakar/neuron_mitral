@@ -19,7 +19,7 @@ proc init() {
     somatic = new SectionList()
     soma somatic.append
     hillock somatic.append
-    initialseg somatic.append
+    //initialseg somatic.append
 
     somden = new SectionList()
     forsec somatic somden.append()
@@ -47,8 +47,8 @@ proc segments() {local i
     priden.nseg = 5
     forsec "tuftden" nseg = 30
     forsec "secden" nseg = 4
-    initialseg.nseg = 3
-    hillock.nseg = 3
+    initialseg.nseg = 300
+    hillock.nseg = 300
 }
 
 proc geometry() {local i
@@ -81,7 +81,7 @@ proc memb() {
         e_pas = -65
     }
 
-    /*initialseg {
+    initialseg {
         insert nax  insert kamt insert kdrmt
         ek = -90
         ena = 50
@@ -90,7 +90,7 @@ proc memb() {
         sh_nax = 0
         gbar_kamt = 0.04
         gbar_kdrmt = 0.0001
-    }*/
+    }
 }
 
 endtemplate Mitral

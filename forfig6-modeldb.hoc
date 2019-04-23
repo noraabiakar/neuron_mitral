@@ -2,7 +2,7 @@ load_file("nrngui.hoc")
 load_file("mitral-modeldb.hoc")
 load_file("gap.hoc")
 load_file("correl.hoc")
-cvode_active(1)
+cvode_active(0)
 
 Vrest = -65
 dt = 0.1
@@ -96,6 +96,8 @@ proc init() {
 	    v=Vrest
 	    if (ismembrane("nax")) {
             e_pas=v+(ina+ik)/g_pas
+            print secname()
+            print e_pas
         } else {
             e_pas=v
         }
