@@ -123,28 +123,13 @@ proc run() {
     savv0.wopen("cell0somav.dat")
     savv1.wopen("cell1somav.dat")
   
-    savv0.printf("{\n  \"mitral_neuron_cell\": \"0\",\n  \"data\": {\n   \"time\": [\n")
-
     tmitral1.printf(savv0)
-
-    savv0.printf("\n  ],\n  \"voltage\": [\n")
-
+    savv0.printf("voltage\n")
     mitral1.printf(savv0)
 
-    savv0.printf("\n  ]\n },\n \"units\": \"mV\",\n")
-    savv0.printf(" \"name\": \"neuron\"\n}")
-
-
-    savv1.printf("{\n  \"mitral_neuron_cell\": \"1\",\n  \"data\": {\n   \"time\": [\n")
-
     tmitral2.printf(savv1)
-
-    savv1.printf("\n  ],\n  \"voltage\": [\n")
-
+    savv1.printf("voltage\n")
     mitral2.printf(savv1)
-
-    savv1.printf("\n  ]\n },\n \"units\": \"mV\",\n")
-    savv1.printf(" \"name\": \"neuron\"\n}")
 
     savv0.close()
     savv1.close()
